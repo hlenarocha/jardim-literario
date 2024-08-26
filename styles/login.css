@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Mono", monospace;
+}
+
+footer {
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff8eb;
+  padding: 15px;
+  color: #3a3a3a;
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  border-top: #3A5E65 dashed 2px;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f6eee0;
+  width: 800px;
+  height: 700px;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+  align-items: center;
+  
+  
+}
+
+.logo-title{
+  width: fit-content;
+  border-bottom: #ff6960 solid 7px;
+  padding-bottom: 10px;
+}
+
+
+.image-container {
+ width: 100%;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+input {
+  background-color: #fff8eb;
+  border-radius: 16px;
+  border: #3A5E65 solid 3px;
+  color: #3a3a3a;
+  width: 265px;
+  height: 56px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+}
+
+.title-input {
+  background-color: #fff8eb;
+  width: 142px;
+  height: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  color: #3A5E65;
+  font-weight: bold;
+}
+
+button {
+  padding: 10px;
+  width: 235px;
+  height: 70px;
+  margin-top: 20px;
+  font-weight: bold;
+  color: white;
+  border-radius: 16px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+button:hover {
+  color: black;
+  opacity: 50%;
+}
+
+.registrar-link:hover {
+  opacity: 70%;
+  font-size: 20px;
+  
+}
+
+.registrar-link {
+  font-size: 16px;
+}
+
+.text-container {
+  background-color: #fff8eb;
+  rotate: 38deg;
+  width: 200px;
+  height: 900px;
+  position: absolute;
+  top: -200px;
+  margin-left: 100px;
+  z-index: -1;
+  box-shadow: 0 0 10px rgba(0, 0, 0);
+
+}

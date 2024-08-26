@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <!--PROJETO EM DESENVOLVIMENTO VISANDO PROJETO FINAL-->
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jardim Literário</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+</head>
+<body style="background-color: #f6eee0;">
+  <header style="display: flex; justify-content: space-between;">
+    <div>
+      <img src="./images/logo(1).png" alt="Logo" style="position: absolute; margin-left: 50px;"/>
+    </div>
+    <div style="display: flex; justify-content: center; padding: 20px;">
+      <p class="logo-title" style="text-align: center; color: #3A5E65; font-weight: bold; font-size: 30px;">JARDIM LITERÁRIO</p>
+    </div>
+    <div>
+
+    </div>
+    
+  </header>
+
+  <div style="background-color: #fff8eb; display: flex; align-items: center;" class="citacao-container">
+    <div class="quote-container"></div>
+    <div style="position: absolute; right: 100px;">
+      <button style="background-color: transparent; border: none; cursor: pointer;" onclick={quoteGenerator()}>
+        <img src="./images/Refresh.png" alt="Gerar nova citação">
+      </button>
+    </div>
+   
+  </div>
+
+
+  <section id="lista-desejos">
+      <div class="title-container" style="margin-bottom: 30px;">
+        <div style="margin-bottom: 40px;">
+          <p class="title" style="width: 310px;">Lista de desejos.</p>
+        <hr style="width: 60px; height: 7px; background-color: #3A5E65;" >
+        </div>
+        <hr style="width: 7px; height: 65px; background-color: #3A5E65; margin-left: 20px; margin-right: 15px;">
+        <p class="subtitle">Adicione livros desejados para não esquecer de lê-los algum dia. Exclua os desejos que foram saciados através do ícone de exclusão.</p>
+      </div>
+
+      <div class="row-container" style="display: flex; flex-direction: row;">
+        <form>
+          <div>
+            <label for="titulo" class="title-input">Título</label>
+            <input type="text" id="titulo" required placeholder="Ex.: Dom Casmurro"/>
+          </div>
+          <div>
+            <label type="text" for="autor" class="title-input" style="padding-left: 25px; padding-right: 25px;">Autor</label>
+            <input type="text" id="autor" required placeholder="Ex.: Machado de Assis"/>
+          </div> 
+          <div class="buttons-container">
+            <button class="button-adicionar button" type="submit" style="background-color: #3A5E65;">ADICIONAR</button>
+            <button class="button-buscar button" type="submit" style="background-color: #ff6960; border: #3A5E65 solid 3px;">BUSCAR</button>
+            <button class="button-limpar button" type="reset" style="background-color: #f4b74b; border: #3A5E65 solid 3px;">LIMPAR</button>
+          </div>
+        </form>
+        <div class="right-container">
+  
+            <p class="lista-off">Adicione livros à sua lista de desejos e ela aparecerá aqui.
+            </p>
+          
+        </div>
+        <div class="menu-right-side">
+          <div class="menu-item">
+            <p class="title-menu-item">Home</p>
+            <img class='img-menu' src="./images/book.png" />
+          </div>
+          <div class="menu-item">
+            <p class="title-menu-item">Home</p>
+            <img class='img-menu' src="./images/book.png" />
+          </div>          
+        </div>
+      </div>
+    
+    
+    
+  </section>
+  <script src="./scripts/quotes.js"></script>
+</body>
+<footer>
+  <p>&copy; 2024 Jardim Literário. Todos os direitos reservados.</p>
+</footer>
+</html>
